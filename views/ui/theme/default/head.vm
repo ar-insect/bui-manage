@@ -1,0 +1,43 @@
+#*
+@description: 默认头部
+*#
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="icon" href="images/favicon.ico">
+        <title>$!ui.title</title>
+        ## 配置css
+        #SLITERAL($!ui.css)
+        #SLITERAL($!ui.__style)
+        ## seajs配置本地化
+        <script charset="utf-8" src="/assets/sea.js"></script>
+        <script charset="utf-8" src="/assets/seajs-style/1.0.2/seajs-style.js"></script>
+        <script>
+            seajs && seajs.config({
+                base : '/assets',
+                /*paths: {
+                 assets: '/assets'
+                 },*/
+                alias : {
+                    '$' : '$'
+                },
+                charset : 'utf-8'
+            });
+        </script>
+    </head>
+<body>
+    <div class="header">
+         <div class="dl-title">
+            <a href="#" target="_blank">
+                <span class="lp-title-port">BUI</span><span class="dl-title-text">前端框架</span>
+            </a>
+         </div>
+        <div class="dl-log">
+            欢迎您，<span class="dl-log-user">**.**@alibaba-inc.com</span><a href="###" title="退出系统" class="dl-log-quit">[退出]</a><a href="#" title="文档库" class="dl-log-quit">文档库</a>
+        </div>
+    </div><!-- end header -->
+    <div class="content">
+        #cmsparse("component/nav.vm")
+        <ul id="J_NavContent" class="dl-tab-conten">
+        </ul>

@@ -1,0 +1,54 @@
+{
+  "name": "bui-manage",
+  "description": "bui-manage",
+  "version": "1.0.0",
+  "homepage": "https://github.com/ar-insect/bui-manage",
+  "author": {
+    "name": "'ar.insect'",
+    "email": "'603227937@qq.com'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ar-insect/bui-manage.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ar-insect/bui-manage/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": ""
+    }
+  ],
+  "main": "",
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "scripts": {
+    "test": "grunt nodeunit"
+  },
+  "alias": {
+    "$": "$"
+  },
+  "devDependencies": {
+    "errorhandler": "1.2.2",
+    "express": "3.x",
+    "grunt": "^0.4.5",
+    "grunt-cmd-concat": "^0.2.8",
+    "grunt-cmd-transport": "^0.4.1",
+    "grunt-contrib-clean": "^0.5.0",
+    "grunt-contrib-copy": "^0.5.0",
+    "grunt-contrib-cssmin": "^0.9.0",
+    "grunt-contrib-jshint": "~0.10.0",
+    "grunt-contrib-less": "^1.0.0",
+    "grunt-contrib-uglify": "~0.7.0",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-css-import": "^0.1.6",
+    "grunt-csscomb": "^3.0.0",
+    "jade": "*",
+    "lodash": "^2.4.1",
+    "velocity": "0.7.1",
+    "velocityjs": "0.4.6"
+  },
+  "keywords": []
+}

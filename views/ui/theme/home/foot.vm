@@ -1,0 +1,9 @@
+#*
+@description: 默认页脚
+*#
+        </div>
+    ## 配置js
+    #SLITERAL($!ui.js)
+    #SLITERAL($!ui.__script)
+    </body>
+</html>

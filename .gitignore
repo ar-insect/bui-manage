@@ -1,0 +1,22 @@
+# system
+.DS_Store
+Thumbs.db
+
+# editor
+.idea
+.project
+.settings
+
+# build
+.sass-cache
+.build
+
+# tools
+.svn/
+
+# customize
+assets/
+
+# node.js
+npm-debug.log
+node_modules/

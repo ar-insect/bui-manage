@@ -1,0 +1,11 @@
+{
+    "css": [],
+    "js": [],
+    "head": "theme/default",
+    "foot": "theme/default",
+    "vars": {
+        "title": "BUI 管理系统",
+        "charset": "UTF-8",
+        "contentType": "text/html"
+    }
+}
