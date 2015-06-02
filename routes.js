@@ -6,7 +6,9 @@ var mockdata = require('./controllers/home/data'); //test data
 
 var main = require('./controllers/main');
 var form = require('./controllers/form');
-var report = require('./controllers/report');
+var search = require('./controllers/search');
+var detail = require('./controllers/detail');
+var chart = require('./controllers/chart');
 // more controllers define here.
 // ...
 
@@ -62,6 +64,39 @@ module.exports = function(app) {
     app.get('/form/dialog-grid.html', form.dialog_grid);
     // 表单中使用弹出框
     app.get('/form/form-dialog-grid.html', form.form_dialog_grid);
+    // 搜索页
+    // 搜索页面代码
+    app.get('/search/code.html', search.code);
+    // 搜索页面示例
+    app.get('/search/example.html', search.example);
+    // 搜索页面编辑示例
+    app.get('/search/example-dialog.html', search.example_dialog);
+    // 搜索页面简介
+    app.get('/search/introduce.html', search.introduce);
+    // 搜索配置
+    app.get('/search/config.html', search.config);
+    // 使用tab过滤
+    app.get('/search/tab.html', search.tab);
+    //详情页面
+    // 详情页面代码
+    app.get('/detail/code.html', detail.code);
+    // 详情页面示例
+    app.get('/detail/example.html', detail.example);
+    // 详情页面简介
+    app.get('/detail/introduce.html', detail.introduce);
+    // 图表
+    // 引入代码
+    app.get('/chart/code.html', chart.code);
+    // 折线图
+    app.get('/chart/line.html', chart.line);
+    // 区域图
+    app.get('/chart/area.html', chart.area);
+    // 柱状图
+    app.get('/chart/column.html', chart.column);
+    // 饼图
+    app.get('/chart/pie.html', chart.pie);
+    // 雷达图
+    app.get('/chart/radar.html', chart.radar);
 
     // 404 page warn: must in the last
     app.get('*', function(req, res) {

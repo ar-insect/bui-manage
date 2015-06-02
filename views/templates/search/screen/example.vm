@@ -1,0 +1,41 @@
+<div class="row">
+      <form id="searchForm" class="form-horizontal span24">
+        <div class="row">
+          <div class="control-group span8">
+            <label class="control-label">学生编号：</label>
+            <div class="controls">
+              <input type="text" class="control-text" name="id">
+            </div>
+          </div>
+          <div class="control-group span8">
+            <label class="control-label">学生姓名：</label>
+            <div class="controls">
+              <input type="text" class="control-text" name="stuName">
+            </div>
+          </div>
+          <div class="control-group span8">
+            <label class="control-label">性别：</label>
+            <div class="controls" >
+              <select name="" id="" name="sex">
+                <option value="">男</option>
+                <option value="">女</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="control-group span9">
+            <label class="control-label">入学时间：</label>
+            <div class="controls">
+              <input type="text" class=" calendar" name="startDate"><span> - </span><input name="endDate" type="text" class=" calendar">
+            </div>
+          </div>
+          <div class="span3 offset2">
+            <button  type="button" id="btnSearch" class="button button-primary">搜索</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="search-grid-container">
+      <div id="grid"></div>
+    </div>

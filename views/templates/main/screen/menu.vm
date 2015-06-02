@@ -11,7 +11,7 @@
       </div>
       <div class="span16">
         <h2>图示</h2>
-        <img src="../assets/img/nav.jpg" alt="一级导航">
+        <img src="/assets/bui/img/nav.jpg" alt="一级导航">
         <h2>代码</h2>
         <p>dom中有一个钩子<code>J_Nav</code>来绑定顶部导航的事件</p>
         <pre class="prettyprint linenums">

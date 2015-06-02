@@ -22,6 +22,6 @@
       </div>
       <div class="span14">
         <h3>示例图</h3>
-        <img src="../assets/img/resource.jpg" alt="文件结构">
+        <img src="/assets/bui/img/resource.jpg" alt="文件结构">
       </div>
     </div>
