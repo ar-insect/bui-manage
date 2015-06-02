@@ -58,6 +58,7 @@ module.exports = function (grunt) {
         css_import: {
             compress: {
                 files: {
+                    'assets/page/1.0.0/page.css': ['static/css/page/1.0.0/page.css']
                 }
             }
         },
@@ -68,7 +69,7 @@ module.exports = function (grunt) {
             minify: {
                 expand: true,
                 cwd: 'assets/',
-                src: [],
+                src: ['page/**/*.css'],
                 dest: 'assets/',
                 ext: '.css'
             }
@@ -85,6 +86,9 @@ module.exports = function (grunt) {
                 files: {
                     'assets/common/1.0.0/common.js': [
                         'static/js/common/1.0.0/common.js'
+                    ],
+                    'assets/page/1.0.0/page.js': [
+                        'static/js/page/1.0.0/page.js'
                     ]
                 }
             }
@@ -97,7 +101,7 @@ module.exports = function (grunt) {
                 files: [{
                     expand: true,
                     cwd: 'assets/',
-                    src: ['common/**/*.js'],
+                    src: ['common/**/*.js', 'page/**/*.js'],
                     dest: 'assets/'
                 }]
             }

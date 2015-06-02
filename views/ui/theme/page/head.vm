@@ -5,7 +5,6 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <link rel="icon" href="images/favicon.ico">
         <title>$!ui.title</title>
         ## 配置css
         #SLITERAL($!ui.css)
@@ -27,17 +26,4 @@
         </script>
     </head>
 <body>
-    <div class="header">
-         <div class="dl-title">
-            <a href="#" target="_blank">
-                <span class="lp-title-port">BUI</span><span class="dl-title-text">前端框架</span>
-            </a>
-         </div>
-        <div class="dl-log">
-            欢迎您，<span class="dl-log-user">**.**@alibaba-inc.com</span><a href="#" title="退出系统" class="dl-log-quit">[退出]</a><a href="#" title="文档库" class="dl-log-quit">文档库</a>
-        </div>
-    </div>
-    <div class="content">
-        #cmsparse("component/nav.vm")
-        <ul id="J_NavContent" class="dl-tab-conten">
-        </ul>
+    <div class="container">
