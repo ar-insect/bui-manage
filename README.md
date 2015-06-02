@@ -6,8 +6,14 @@ bui framework
 
 ### demo
 
-本地访问：`http://127.0.0.1:3000` 或者 `localhost:3000`
+安装node环境（略）
 
-###框架使用
+- 下载项目到本地：git clone git@github.com:ar-insect/bui-manage.git
+
+- 项目根目录下执行：`npm install` && `grunt`
+
+- 本地访问：`localhost:3000` 或者 `http://127.0.0.1:3000`
+
+### 框架使用
 
 参见 [spider wiki](https://github.com/araneid/spider/wiki)
