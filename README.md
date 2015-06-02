@@ -12,7 +12,7 @@ bui framework
 
 - 项目根目录下执行：`npm install && grunt`
 
-- 本地访问：`localhost:3000` 或者 `http://127.0.0.1:3000`
+- 本地访问：`localhost:3000`
 
 ### 框架使用
 
