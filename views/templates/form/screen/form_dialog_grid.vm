@@ -1,0 +1,130 @@
+<form id ="J_Form" class="form-horizontal" method="post">
+      <!--    -->
+      <h3>基本信息</h3>
+      <div class="row">
+        <div class="control-group span12">
+          <label class="control-label"><s>*</s>学生姓名：</label>
+          <div class="controls">
+            <input name="sname" type="text" class="control-text" data-rules="{required:true}">
+          </div>
+        </div>
+        <div class="control-group span12">
+          <label class="control-label"><s>*</s>学生编号：</label>
+          <div class="controls">
+            <input name="sid" type="text" class="control-text" data-rules="{required:true}">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="control-group span12">
+          <label class="control-label">性别：</label>
+          <div class="controls">
+            <select name="sex">
+              <option value="0">男</option>
+              <option value="1">女</option>
+            </select>
+          </div>
+        </div>
+        <div class="control-group12 span12">
+          <label class="control-label"><s>*</s>出生日期：</label>
+          <div class="controls">
+            <input name="birthday" type="text" class="calendar" data-rules="{required:true}">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="control-group span12">
+          <label class="control-label"><s>*</s>家庭住址：</label>
+          <div class="controls">
+            <input name="address" type="text" class="span8 span-width control-text"  data-rules="{required:true}">
+          </div>
+        </div>
+      </div>
+      <hr/>
+      <h3>学校信息</h3>
+      <div class="row">
+        <div class="control-group span12">
+          <label class="control-label"><s>*</s>学校名称：</label>
+          <div class="controls">
+            <input name="" type="text" class=" control-text  span8 span-width" data-rules="{required:true}">
+          </div>
+        </div>
+        <div class="control-group span12">
+          <label class="control-label"><s>*</s>入学日期：</label>
+          <div class="controls bui-form-group" data-rules="{dateRange:true}" >
+            <input name="start" type="text" class="calendar" data-rules="{required:true}"><span> - </span><input name="end" type="text" class="calendar" data-rules="{required:true}">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="control-group span24">
+          <label class="control-label"><s>*</s>学校地址：</label>
+          <div class="controls">
+            <input type="text" class="control-text span8 span-width"  data-rules="{required:true}">
+          </div>
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="control-group span24">
+          <label class="control-label">备注：</label>
+          <div class="controls control-row4">
+            <textarea name="" id="" class="span8 span-width"></textarea>
+          </div>
+        </div>
+      </div>
+      <hr/>
+
+      <h3>教育经历</h3>
+      <div class="row">
+        <div class="span21 offset3 control-row-auto">
+          <div id="grid"></div>
+          <input type="hidden" name="eduation">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="form-actions offset3">
+          <button type="submit" class="button button-primary">保存</button>
+          <button type="reset" class="button">重置</button>
+        </div>
+      </div>
+    </form>
+    <div id="content" class="hide">
+      <form id="J_Form" class="form-horizontal">
+        <div class="row">
+          <div class="control-group span8">
+            <label class="control-label"><s>*</s>学校名称：</label>
+            <div class="controls">
+              <input name="school" type="text" data-rules="{required:true}" class="input-normal control-text">
+            </div>
+          </div>
+          <div class="control-group span8">
+            <label class="control-label"><s>*</s>学生类型：</label>
+            <div class="controls">
+              <select  data-rules="{required:true}"  name="type" class="input-normal">
+                <option value="">请选择</option>
+                <option value="zou">走读</option>
+                <option value="zhu">住校</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="control-group span15 ">
+            <label class="control-label">在校日期：</label>
+            <div id="range" class="controls bui-form-group" data-rules="{dateRange : true}">
+              <input name="enter" class="calendar" type="text"><label>&nbsp;-&nbsp;</label><input name="outter" class="calendar" type="text">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="control-group span15">
+            <label class="control-label">备注：</label>
+            <div class="controls control-row4">
+              <textarea name="memo" class="input-large" type="text"></textarea>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
