@@ -2,7 +2,7 @@
  * Module dependencies.
  */
 var site = require('./controllers/home'); // default index.js
-var mockdata = require('./controllers/home/data'); //test data
+var formSearch = require('./controllers/data/form_search'); //test data
 
 var main = require('./controllers/main');
 var form = require('./controllers/form');
@@ -16,8 +16,8 @@ module.exports = function(app) {
     // home
     app.get('/', site.index);
     // mock json req data
-    app.get('/data/combotree.json', mockdata.combotree);
-    app.post('/data/datagrid', mockdata.datagrid);
+    app.get('/data/formSearch/del.json', formSearch.del);
+    app.get('/data/formSearch/student.json', formSearch.student);
     // main
     // 首页代码
     app.get('/main/code.html', main.code);
@@ -69,6 +69,8 @@ module.exports = function(app) {
     app.get('/search/code.html', search.code);
     // 搜索页面示例
     app.get('/search/example.html', search.example);
+    // 编辑
+    app.get('/search/edit.html', search.edit);
     // 搜索页面编辑示例
     app.get('/search/example-dialog.html', search.example_dialog);
     // 搜索页面简介

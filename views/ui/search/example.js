@@ -8,7 +8,7 @@ BUI.use(['frame/search', 'bui/overlay'], function (Search, Overlay) {
                     id: 'detail' + v,
                     title: '学生信息',
                     text: v,
-                    href: 'detail/example.html'
+                    href: '/detail/example.html'
                 });
             }
             },
@@ -23,14 +23,14 @@ BUI.use(['frame/search', 'bui/overlay'], function (Search, Overlay) {
                         id: 'edit' + obj.id,
                         title: '编辑学生信息',
                         text: '编辑',
-                        href: 'search/edit.html'
+                        href: '/search/edit.html'
                     }),
                     delStr = '<span class="grid-command btn-del" title="删除学生信息">删除</span>';//页面操作不需要使用Search.createLink
                 return editStr + delStr;
             }
             }
         ],
-        store = Search.createStore('../data/student.json'),
+        store = Search.createStore('/data/formSearch/student.json'),
         gridCfg = Search.createGridCfg(columns, {
             tbar: {
                 items: [
@@ -70,7 +70,7 @@ BUI.use(['frame/search', 'bui/overlay'], function (Search, Overlay) {
         if (ids.length) {
             BUI.Message.Confirm('确认要删除选中的记录么？', function () {
                 $.ajax({
-                    url: '../data/del.php',
+                    url: '/data/formSearch/del.json',
                     dataType: 'json',
                     data: {ids: ids},
                     success: function (data) {

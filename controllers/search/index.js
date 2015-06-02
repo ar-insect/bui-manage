@@ -11,6 +11,12 @@ exports.example = function(req, res) {
     });
 };
 
+exports.edit = function(req, res) {
+    res.render('search/edit', {
+        hello: '这是mockdata数据。。。'
+    });
+};
+
 exports.introduce = function(req, res) {
     res.render('search/introduce', {
         hello: '这是mockdata数据。。。'
