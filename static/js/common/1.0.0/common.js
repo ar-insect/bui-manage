@@ -1,7 +1,7 @@
 BUI.use('frame/main', function () {
     var config = [{
         id: 'menu',
-        //homePage: 'code',
+        homePage: 'code',
         menu: [{
             text: '首页内容',
             items: [
