@@ -9,7 +9,7 @@ BUI.use('bui/form', function (Form) {
 
     var field = f1.getField('a');
     field.set('remote', {
-        url: '../data/student.php',
+        url: '/data/formSearch/student.json',
         dataType: 'json',
         callback: function (data) {
             $('#info').text(BUI.JSON.stringify(data));

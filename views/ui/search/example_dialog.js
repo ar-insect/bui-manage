@@ -36,12 +36,12 @@ BUI.use('frame/search', function (Search) {
             }
             }
         ],
-        store = Search.createStore('../data/student.json', {
+        store = Search.createStore('/data/formSearch/student.json', {
             proxy: {
                 save: { //也可以是一个字符串，那么增删改，都会往那么路径提交数据，同时附加参数saveType
-                    addUrl: '../data/add.json',
-                    updateUrl: '../data/edit.json',
-                    removeUrl: '../data/del.php'
+                    addUrl: '/data/formSearch/add.json',
+                    updateUrl: '/data/formSearch/edit.json',
+                    removeUrl: '/data/formSearch/del.json'
                 }/*,
                  method : 'POST'*/
             },

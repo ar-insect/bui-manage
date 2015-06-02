@@ -1,3 +1,10 @@
+exports.add = function(req, res) {
+    res.json({"success":true});
+};
+exports.edit = function(req, res) {
+    res.json({"success":true});
+};
+
 exports.del = function(req, res) {
     res.json({"success":true});
 };

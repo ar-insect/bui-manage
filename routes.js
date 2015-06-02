@@ -16,6 +16,8 @@ module.exports = function(app) {
     // home
     app.get('/', site.index);
     // mock json req data
+    app.get('/data/formSearch/add.json', formSearch.add);
+    app.get('/data/formSearch/edit.json', formSearch.edit);
     app.get('/data/formSearch/del.json', formSearch.del);
     app.get('/data/formSearch/student.json', formSearch.student);
     // main
