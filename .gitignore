@@ -20,3 +20,4 @@ assets/
 # node.js
 npm-debug.log
 node_modules/
+spm_modules/
