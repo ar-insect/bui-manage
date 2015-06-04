@@ -20,6 +20,8 @@ module.exports = function(app) {
     app.get('/data/formSearch/edit.json', formSearch.edit);
     app.get('/data/formSearch/del.json', formSearch.del);
     app.get('/data/formSearch/student.json', formSearch.student);
+    // test post
+    app.post('/data/formSearch/test.json', formSearch.add);
     // main
     // 首页代码
     app.get('/main/code.html', main.code);

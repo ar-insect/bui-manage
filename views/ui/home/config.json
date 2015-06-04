@@ -1,7 +1,7 @@
 {
     "default": {
         "css": ["bui/css/dpl.css", "bui/css/bui.css", "bui/css/main.css"],
-        "js": ["$.js", "bui/bui.js", "bui/config.js", "common/1.0.0/common.js"],
+        "js": ["$.js", "bui/bui.js", "bui/config.js", "common/1.0.0/common.js", "underscore.js", "backbone.js"],
         "head": "theme/home",
         "foot": "theme/home",
         "vars": {
@@ -11,7 +11,7 @@
         "404": {
             "vars": {
                 "layout": "null",
-                "title": "Ò³ÃæÎ´ÕÒµ½"
+                "title": "Ò³ï¿½ï¿½Î´ï¿½Òµï¿½"
             }
         },
         "index": {
