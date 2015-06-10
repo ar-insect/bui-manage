@@ -20,7 +20,6 @@
                  assets: '/assets'
                  },*/
                 alias : {
-                    '$' : '$'
                 },
                 charset : 'utf-8'
             });

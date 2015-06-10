@@ -1,7 +1,7 @@
 {
     "default": {
         "css": ["bui/css/dpl.css", "bui/css/bui.css", "bui/css/page.css", "bui/css/prettify.css", "page/1.0.0/page.css"],
-        "js": ["$.js", "bui/bui.js", "bui/config.js", "page/1.0.0/page.js", "bui/prettify.js"],
+        "js": ["jquery/1.10.1/jquery.js", "bui/bui.js", "bui/config.js", "page/1.0.0/page.js", "bui/prettify.js"],
         "head": "theme/page",
         "foot": "theme/page",
         "vars": {

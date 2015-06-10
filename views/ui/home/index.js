@@ -1,4 +1,5 @@
 
+seajs.use(['backbone/1.1.2/backbone'], function(Backbone) {
     var Meal = new Backbone.Model({
         defaults: {
             "appetizer":  "caesar salad",
@@ -18,3 +19,4 @@
             console.log(arguments);
         }
     });
+});

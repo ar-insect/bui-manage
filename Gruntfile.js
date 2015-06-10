@@ -24,14 +24,6 @@ module.exports = function (grunt) {
                     dest: 'assets'
                 }]
             },
-            $: {
-                files: [{
-                    expand: true,
-                    cwd: 'lib/',
-                    src: ['$.js'],
-                    dest: 'assets'
-                }]
-            },
             /*
              * bui 直接cp到assets
              */
@@ -84,7 +76,7 @@ module.exports = function (grunt) {
                     src : '*.js',
                     dest : 'assets/backbone/1.1.2'
                 }]
-            },
+            }
         },
         css_import: {
             compress: {

@@ -1,7 +1,7 @@
 {
     "default": {
         "css": ["bui/css/dpl.css", "bui/css/bui.css", "bui/css/main.css"],
-        "js": ["$.js", "bui/bui.js", "bui/config.js", "common/1.0.0/common.js", "underscore.js", "backbone.js"],
+        "js": ["jquery/1.10.1/jquery.js", "bui/bui.js", "bui/config.js", "common/1.0.0/common.js"],
         "head": "theme/home",
         "foot": "theme/home",
         "vars": {
