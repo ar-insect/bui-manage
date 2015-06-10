@@ -14,6 +14,3 @@ bui framework
 
 - 本地访问：`localhost:3000`
 
-### 框架使用
-
-参见 [spider wiki](https://github.com/araneid/spider/wiki)
