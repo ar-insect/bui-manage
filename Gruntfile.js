@@ -42,6 +42,25 @@ module.exports = function (grunt) {
                     src: ['bui/**/*'],
                     dest: 'assets'
                 }]
+            },
+            /*
+             * 避免`transport`依赖出错需事先将模块cp到assets下面
+             */
+            underscore: {
+                files: [{
+                    expand: true,
+                    cwd: 'lib/',
+                    src: ['underscore/1.6.0/*.js'],
+                    dest: 'assets'
+                }]
+            },
+            jquery: {
+                files: [{
+                    expand: true,
+                    cwd: 'lib/',
+                    src: ['jquery/1.10.1/*.js'],
+                    dest: 'assets'
+                }]
             }
         },
         transport: {
@@ -53,7 +72,19 @@ module.exports = function (grunt) {
                     '.css': [style.css2jsParser]
                 },
                 paths: ['assets']
-            }
+            },
+            backbone : {
+                options : {
+                    idleading : 'backbone/1.1.2/'
+                },
+                files : [{
+                    expand : true,
+                    filter : 'isFile',
+                    cwd : 'lib/backbone/1.1.2',
+                    src : '*.js',
+                    dest : 'assets/backbone/1.1.2'
+                }]
+            },
         },
         css_import: {
             compress: {

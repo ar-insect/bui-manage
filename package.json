@@ -28,7 +28,9 @@
     "test": "grunt nodeunit"
   },
   "alias": {
-    "$": "$"
+    "jquery": "jquery/1.10.1/jquery",
+    "underscore": "underscore/1.6.0/underscore",
+    "backbone": "backbone/1.1.2/backbone"
   },
   "devDependencies": {
     "errorhandler": "1.2.2",
